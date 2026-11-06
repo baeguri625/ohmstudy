@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>옴스터디</title>
+<meta name="description" content="전기기사·전기공사기사·전공 공부 도우미">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap brand">
+    <svg width="40" height="40" viewBox="0 0 44 44" aria-hidden="true">
+      <rect x="1" y="1" width="42" height="42" rx="6" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <path d="M4 22h7l3-7 5 14 5-14 5 14 3-7h8" fill="none" stroke="var(--copper)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <h1>옴스터디 <span class="ohm">Ω</span></h1>
+      <p>전기기사 · 전기공사기사 · 전공 공부 도우미</p>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="메뉴">
+  <div class="wrap" id="tabbar">
+    <a href="#home" data-view="home">홈</a>
+    <a href="#practice" data-view="practice">문제 풀기</a>
+    <a href="#make" data-view="make">문제 만들기</a>
+    <a href="#import" data-view="import">기출 파일 변환</a>
+    <a href="#ask" data-view="ask">질문하기</a>
+    <a href="#wrong" data-view="wrong">오답노트</a>
+    <a href="#stats" data-view="stats">분석·계획</a>
+    <a href="#bank" data-view="bank">문제은행</a>
+    <a href="#tools" data-view="tools">도구</a>
+    <a href="#settings" data-view="settings">설정</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="view" id="v-home"></section>
+  <section class="view" id="v-practice" hidden></section>
+  <section class="view" id="v-make" hidden></section>
+  <section class="view" id="v-import" hidden></section>
+  <section class="view" id="v-ask" hidden></section>
+  <section class="view" id="v-wrong" hidden></section>
+  <section class="view" id="v-stats" hidden></section>
+  <section class="view" id="v-bank" hidden></section>
+  <section class="view" id="v-tools" hidden></section>
+  <section class="view" id="v-settings" hidden></section>
+</main>
+
+<footer class="wrap">옴스터디 · 기록은 이 브라우저에만 저장됩니다. 설정에서 주기적으로 백업하세요. AI 해설은 틀릴 수 있으니 중요한 내용은 교재로 확인하세요.</footer>
+
+<dialog id="dlg"><div id="dlg-body"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/db.js"></script>
+<script src="js/subjects.js"></script>
+<script src="js/formulas.js"></script>
+<script src="js/seed.js"></script>
+<script src="js/gemini.js"></script>
+<script src="js/tools.js"></script>
+<script src="js/import.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
